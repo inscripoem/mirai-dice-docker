@@ -5,8 +5,6 @@
 # ----------------------------------
 FROM ubuntu:20.04
 
-MAINTAINER Suhui, <suhui@kokona.tech>
-
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install openjdk-11-jre-headless git -y
 RUN adduser --disabled-password --home /home/container container
